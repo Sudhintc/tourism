@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-size: cover;
+}
+.navbar-nav{
+    padding-right: 10%;
+}
+
+.tm-row { display: flex; }
+
+.tm-col-left {
+    width: 50%;
+    height: 100%;
+    padding-left: 40px;  
+    padding-right: 40px;
+}
+
+.tm-col-right {
+    width: 50%;
+    height: 100%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.tm-content {
+    color: white;
+    max-width: 660px;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+.tm-content-title { font-size: 1.5rem; }
+hr { border-top: 1px solid white; }
+
+.dist{
+    padding: 2%;
+    border-radius: 12px;
+}
+
+.dist a:hover{
+    backface-visibility: visible;
+    color: white;
+    
+}
+
+.dist li{
+    list-style-type: none;
+    text-align: center;
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 50px;
+
+}
+#distimg{
+    border: 1px solid;
+    height: 150px;
+}
+.myMargin{
+    
+    background-size: cover;
+   
+}
+
