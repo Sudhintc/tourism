@@ -2,6 +2,7 @@ let smail=document.getElementById("semail");
 let phone=document.getElementById("phone");
 let pwd1=document.getElementById("password1");
 let pwd2=document.getElementById("password2");
+let sname=document.getElementById("sname");
 
 
 
@@ -10,8 +11,11 @@ function svalidate(){
     var res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var psr = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-
-    if(res.test(smail.value)!="1"){
+    if(sname.value.trim()==""){
+        alert("username field required");
+        return false;
+    }
+    else if(res.test(smail.value)!="1"){
         alert("enter a valid email");
         return false;
     }
